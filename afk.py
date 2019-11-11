@@ -1,6 +1,6 @@
-from pynput.keyboard import Key, Controller
+from pynput.keyboard import Key, Controller, Listener
 from win32 import win32gui
-
+import keyboard
 import time
 from random import randrange
 import random
@@ -55,8 +55,7 @@ def antiafk():
 while True:
     antiafk()
     numero = intervalo()
-    
     time.sleep(numero)  
-    
+   
     
 
